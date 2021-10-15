@@ -55,7 +55,6 @@ console.log(
 );
 mongoose
   .connect(DB_URL, {
-    dbName: process.env.NODE_ENV === "production" ? "prod" : "staging",
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
