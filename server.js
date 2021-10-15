@@ -1,6 +1,5 @@
 require("dotenv").config();
 
-const cron = require("node-cron");
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -8,7 +7,6 @@ const mongoose = require("mongoose");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 
-// const { fetchAndSaveTweets } = require("./fetchTweets");
 const categoryController = require("./controllers/category");
 
 const categoriesRoutes = require("./routes/category");
@@ -64,24 +62,7 @@ mongoose
   .then(() => {
     console.log("✅ Database Connected!");
 
-    // fetchAndSaveTweets();
-
-    // if (process.env.NODE_ENV === "production") {
-    //   cron.schedule("*/5 * * * *", async () => {
-    //     console.log("Fetching Tweets...");
-    //     console.time("fetchTweets");
-
-    //     await fetchAndSaveTweets();
-
-    //     console.timeEnd("fetchTweets");
-    //     console.log("Done Fetching Tweets!");
-    //   });
-    // }
-
     app.listen(PORT, "0.0.0.0", () => {
       console.log("🚀 Server Ready! at port:", PORT);
-    });
-    process.on("beforeExit", () => {
-      categoryController.flush();
     });
   });

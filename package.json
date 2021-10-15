@@ -24,7 +24,6 @@
     "helmet": "^4.6.0",
     "mongoose": "^5.12.7",
     "morgan": "^1.10.0",
-    "node-cron": "^3.0.0",
     "node-fetch": "^2.6.1",
     "static-tweets": "^0.5.5",
     "swagger-jsdoc": "^6.0.0",
