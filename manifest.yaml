@@ -39,7 +39,7 @@ spec:
         - name: yellowjobs-server-prod
           image: docker.io/ans29hul/yellowjobs-server-prod:latest
           env:
-            - name: yellowjobs-server-prod-env
+            - name: MONGO_URI
               valueFrom:
                 secretKeyRef:
                   name: yellowjobs-server-prod-env
