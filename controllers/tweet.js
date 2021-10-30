@@ -22,15 +22,15 @@ exports.findAll = async ({
   unverified,
   IDs,
 }) => {
-  const mongoQuery = { $and: [{ need_manual_verification: true }] };
-  // const mongoQuery = {
-  //   $and: [
-  //     {
-  //       need_manual_verification:
-  //         unverified === "true" ? "true" : { $in: ["false", "approved"] },
-  //     },
-  //   ],
-  // };
+  // const mongoQuery = { $and: [{ need_manual_verification: true }] };
+  const mongoQuery = {
+    $and: [
+      {
+        need_manual_verification:
+          unverified === "true" ? "true" : { $in: ["false", "approved"] },
+      },
+    ],
+  };
 
   if (categories) {
     mongoQuery.$or = [];
