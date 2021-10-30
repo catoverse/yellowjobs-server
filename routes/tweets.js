@@ -19,7 +19,7 @@ const router = express.Router();
  *               type: integer
  *               description: number of tweets to offset the results by
  *             - in: query
- *               name: type
+ *               name: types
  *               type: array
  *               items:
  *                   type: string
@@ -45,7 +45,7 @@ const router = express.Router();
  *               type: string
  *               enum: [true, false]
  *               description: set true to get unverified tweets
- *               default: false
+ *
  *         responses:
  *             200:
  *                 description: A list of tweet objects
