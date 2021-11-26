@@ -13,11 +13,12 @@ const save = async ({ userId, tweetId, action, value = 0 }) => {
       action === "save" ||
       action === "share" ||
       action === "report" ||
-      action === "click"
+      action === "click" ||
+      action === "save_not_logged_in"
     )
   )
     throw new Error(
-      "invalid action. Can be save/share/report/click. For unsave event use action=save and value=-1"
+      "invalid action. Can be save/share/report/click/save_not_logged_in For unsave event use action=save and value=-1"
     );
 
   const { n, nModified } = await Feedback.updateOne(

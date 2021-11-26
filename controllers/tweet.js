@@ -22,7 +22,7 @@ exports.findAll = async ({
   unverified,
   IDs,
 }) => {
-  //const mongoQuery = { $and: [{ need_manual_verification: false }] };
+  // const mongoQuery = { $and: [{ need_manual_verification: true }] };
   const mongoQuery = {
     $and: [
       {
@@ -93,7 +93,7 @@ exports.findAll = async ({
     });
   }
 
-  console.log(mongoQuery);
+  // console.log(mongoQuery);
   return (
     (await Tweet.find(mongoQuery, null, {
       limit: Number(limit),
@@ -114,14 +114,14 @@ exports.findSaved = async ({ userId }) => {
     value: { $ne: -1 },
   });
 
-  console.log(data);
+  // console.log(data);
   let string = "";
 
   data.forEach((element) => {
     string += element.tweet_id + ",";
   });
 
-  console.log("the ids:", string);
+  // console.log("the ids:", string);
   // if (!string) throw new Error("No saved tweets");
   if (!string) return [];
   const tweetObjects = await this.findAll({ IDs: string });
