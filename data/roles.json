@@ -6,7 +6,7 @@
 		"Airflow": ["airflow"],
 		"Algorithms": ["algorithms"],
 		"Android": ["appdev","app","android","kotlin","java","reactnative","flutter"],
-      "AngularJS": ["angular"],
+	      "AngularJS": ["angular"],
 		"Ansible": ["ansible"],
 		"Apache": ["apache"],
 		"Apollo": ["apollo"],
@@ -129,7 +129,7 @@
 		"Snowflake": ["snowflake"],
 		"Software Architect": ["softwarearchitect","softwarearchitects","architect","architects","systemsdesigner","systemdesigners"],
 		"Software Developer": ["tech","devs","softwareengineer","softwareengineers","software","dev","devs","fullstack","backend","frontend","android","ios","nodejs","reactjs","java"],
-      "Solidity": ["solidity"],
+      		"Solidity": ["solidity"],
 		"Spark": ["spark"],
 		"Spring": ["spring"],
 		"Stats": ["stats"],
@@ -137,12 +137,13 @@
 		"TDD": ["tdd"],
 		"Tech Lead": ["techlead"],
 		"Test Automation": ["testautomation","testing"],
-      "Testing": ["testing"],
+      		"Testing": ["testing"],
 		"Typescript": ["typescript"],
 		"Unity": ["unity"],
 		"Unix": ["unix"],
 		"Virtual Reality": ["vr", "virtualreality","mixedreality"],
 		"VueJS": ["vue", "vuejs"],
+		"Web3": ["blockchain","smartcontracts","smartcontract","crypto","ethereum","web3","defi"],
 		"Web Dev": ["webdev","webdevs","fullstack","js","html","css","react","node","vue","vuejs","angularjs"],	
 		"Webflow" : ["webflow"], 
 		"Webmaster": ["webmaster"],
@@ -157,24 +158,24 @@
 		"Brand Design": ["branddesigners","branddesigner","branddesigners"],
 		"Content Strategist": ["contentstrategist","contentstrategists"],
 		"Copywriter": ["copywriter", "uxwriter", "copywriters", "uxwriters"],
-      "Design": ["designer","designers","design"],
+      		"Design": ["designer","designers","design"],
 		"Design Director": ["designdirector","designdirectors"],
 		"Design Lead": ["designlead","designleader","designleads","designleaders"],
 		"Figma": ["figma"],
 		"Graphic Design": ["graphicdesign","graphicdesigner","graphicdesigners"],
-      "Illustration": ["illustration","illustrator","illustrators"],
+      		"Illustration": ["illustration","illustrator","illustrators"],
 		"Information Architect": ["infoarchitect", "infoarchitects","informationarchitect","informationarchitects"],
 		"Interaction Design": ["interactiondesign","interactiondesigner","interactiondesigners"],
 		"Mechanical Design Engineer":["mechanicaldesignengineer","rendering","fea"],
 		"Motion Design": ["motiondesign","motiondesigner","motiondesigners"],
 		"Photoshop": ["photoshop"],
-      "Presentation Design": ["presentationdesign","presentationdesigner","presentationdesigners"],
+      		"Presentation Design": ["presentationdesign","presentationdesigner","presentationdesigners"],
 		"Product Design": ["productdesigner","productdesigners","productdesign"],
 		"Product Lead": ["productlead","productleads","productleader","productleaders"],
 		"Product Manager": ["productmanager","productmanagers", "pm", "manageproduct","productmanagement"],
 		"Sketch": ["sketch"],
 		"Sound Design": ["sounddesign","sounddesigner","sounddesigners"],
-      "UI Design": ["uidesigner","figma","uidesign","uiux"],
+      		"UI Design": ["uidesigner","figma","uidesign","uiux"],
 		"UI Lead": ["uilead"],
 		"UX Design": ["uxdesigner","uxdesigners", "ux","uxdesign"],
 		"UX Lead": ["uxlead"],
@@ -190,7 +191,7 @@
 		"Accounts": ["accounting", "finance","accountant","accountants","accounts"],
 		"Admin": ["admin"],
 		"Analyst": ["analyst","analysts"],
-      "CEO":["ceo","chiefexecutiveofficer"],
+      		"CEO":["ceo","chiefexecutiveofficer"],
 		"COO": ["coo","chiefoperatingofficer"],
 		"CRO": ["cro"],
 		"CXO": ["cxo","chief"],
@@ -201,7 +202,7 @@
 		"Lawyer": ["law","legal","lawyer","lawyers"],
 		"Management": ["management","manager","managers"],
 		"Operations": ["ops", "operations", "coo"],
-      "Product Manager": ["productmanager","productmanagers", "pm", "manageproduct","productmanagement"],
+     		 "Product Manager": ["productmanager","productmanagers", "pm", "manageproduct","productmanagement"],
 		"Project Manager": ["projectmanager","projectmanagers"],
 		"Supervisor":["supervisor","supervisors","supervising"],
 		"Team Lead": ["teamlead","teamleader","teamleaders"],
@@ -209,11 +210,11 @@
 	},
 
 	"Sales": {
-      "Account Manager": ["accountmanager","accountmanagement","accountmanagers"],
+      		"Account Manager": ["accountmanager","accountmanagement","accountmanagers"],
 		"Ambassador": ["ambassador","ambassadors"],
 		"Business Development": ["businessdevelopment","bdm"],
 		"Call":["call","telecallers","telecaller","coldsales"],
-      "Sales":["sales","salespeople","salesperson","salespersons"]
+      		"Sales":["sales","salespeople","salesperson","salespersons"]
 	},
 
 	"Content": {
@@ -228,7 +229,7 @@
 		"Technical Writer":["technicalwriter", "technicalwriting"],
 		"Writer":["writer","copywriter","copy", "writing"],
 		"Youtube":["youtube"],
-      "Video": ["video", "vfx"]
+      		"Video": ["video", "vfx"]
 	},
 
 	"Marketing": {
@@ -248,7 +249,7 @@
 		"Media Relations":["mediarelations","mediarelation"],
 		"Public relations":["publicrelations","publicrelation","pr","publicity"],
 		"Sales":["sales","salespeople","salesperson","salespersons"],
-      "SEO": ["seo"]
+      		"SEO": ["seo"]
 	},
 
 	"Support": {
@@ -257,9 +258,9 @@
 		"Customer Success": ["customersuccess","clientsuccess"],
 		"Executive Assistant": ["executiveassistant","executiveassistants"],
 		"Helpdesk": ["helpdesk"],
-      "Quality Assurance": ["qualityassurance", "qa"],
+      		"Quality Assurance": ["qualityassurance", "qa"],
 		"Service": ["customerservice"],
-      "Support": ["support", "care"],
+      		"Support": ["support", "care"],
 		"Telecalling":["telecaller","telecallers","telecalling"],
 		"Virtual Assistant": ["virtualassistant","virtualassistants"]
 	},
@@ -275,7 +276,7 @@
 		"Doctor": ["doctor","doctors"],
 		"English": ["english"],
 		"Enterprise": ["enterprise"],
-      "Excel": ["excel"],
+      		"Excel": ["excel"],
 		"Medical": ["medical"],
 		"Monitoring": ["monitoring"],
 		"Music": ["music"],
