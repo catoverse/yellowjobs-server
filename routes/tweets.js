@@ -45,6 +45,11 @@ const router = express.Router();
  *               type: string
  *               enum: [true, false]
  *               description: set true to get unverified tweets
+ *             - in: query
+ *               name: additionalFilters
+ *               type: string
+ *               enum: [web3, impact]
+ *               description: additional filters like web3 and impact
  *
  *         responses:
  *             200:
