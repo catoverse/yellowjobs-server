@@ -21,6 +21,7 @@ exports.findAll = async ({
   q,
   unverified,
   IDs,
+  additionalFilters,
 }) => {
   // const mongoQuery = { $and: [{ need_manual_verification: true }] };
   const mongoQuery = {
@@ -90,6 +91,14 @@ exports.findAll = async ({
       $or: IDs.toLowerCase()
         .split(",")
         .map((tweet_id) => ({ tweet_id })),
+    });
+  }
+  if (additionalFilters) {
+    mongoQuery.$and.push({
+      $or: additionalFilters
+        .toLowerCase()
+        .split(",")
+        .map((additionalFilters) => ({ additionalFilters })),
     });
   }
 
